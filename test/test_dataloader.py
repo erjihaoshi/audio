@@ -9,7 +9,7 @@ import os
 
 
 class TORCHAUDIODS(Dataset):
-
+    test_dirpath = os.path.dirname(os.path.realpath(__file__))
     test_dirpath, test_dir = test.common_utils.create_temp_assets_dir()
 
     def __init__(self):
