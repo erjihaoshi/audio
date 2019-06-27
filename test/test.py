@@ -7,6 +7,7 @@ import os
 
 
 class Test_LoadSave(unittest.TestCase):
+    test_dirpath = os.path.dirname(os.path.realpath(__file__))
     test_dirpath, test_dir = test.common_utils.create_temp_assets_dir()
     test_filepath = os.path.join(test_dirpath, "assets",
                                  "steam-train-whistle-daniel_simon.mp3")
